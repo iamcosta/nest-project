@@ -14,6 +14,7 @@ async function bootstrap() {
     .setTitle('Nest Project')
     .setDescription('Nest/Prisma Project Demo')
     .setVersion('0.1')
+    .addBearerAuth()
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
